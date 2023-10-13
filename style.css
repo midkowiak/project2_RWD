@@ -1,0 +1,219 @@
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+.subtitle {
+  color: white;
+  background-color: #405d78;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 40px 0;
+}
+.specialist-subtitle {
+  color: #405d78;
+  font-size: 36px;
+  font-weight: 700px;
+}
+.subtitle-worker {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.text-worker {
+  align-self: center;
+}
+.navigation {
+  background-color: gray;
+  height: 50px;
+  color: white;
+}
+.specialist-container {
+  padding: 50px 0;
+}
+.container-worker {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+.container {
+  width: 96%;
+  margin: 0 auto;
+  height: 100%;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subpage-list {
+  display: none;
+}
+.menu-list {
+  margin-left: 10px;
+}
+.not-allowed {
+  cursor: not-allowed;
+  color: white;
+}
+.header-container {
+  height: 100vh;
+  background-image: url(images/mgla.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+.header-shadow {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  height: 100vh;
+}
+.header-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20% 0;
+  color: white;
+}
+.header-primary-text {
+  width: 100%;
+}
+.subtitle-margin {
+  padding: 60px 0;
+}
+.button-offer {
+  background: rgba(254, 255, 255, 0.002);
+  font-size: small;
+  color: white;
+  width: 164px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid white;
+  font-family: Roboto;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 1s, color 1s;
+}
+.circle {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-size: cover;
+  margin: 0 auto;
+  height: 200px;
+}
+.circle-w {
+  background-image: url(images/kobieta.png);
+}
+.circle-m {
+  background-image: url(images/mezczyzna.png);
+}
+.offer-container {
+  background-color: #405d78;
+}
+.service-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 60px;
+}
+.boxes-offer {
+  background-color: #f1f1f1;
+  width: 80%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  transition: 0.5s;
+}
+.description-offer {
+  font-size: 24px;
+}
+.orange-dot {
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+.footer-container {
+  background-color: #4e4e4e;
+  color: white;
+  padding: 30px 0;
+}
+.footer-icons {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.footer-elements {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.footer-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+.icon {
+  color: white;
+  font-size: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+  .button-offer:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .service-container {
+    width: 700px;
+    flex-direction: row;
+  }
+  .header-primary-text {
+    width: 500px;
+  }
+  .boxes-offer {
+    width: 200px;
+  }
+  .boxes-offer:hover {
+    transform: scale(1.05);
+  }
+  .subpage-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  .container-worker {
+    flex-direction: row;
+  }
+  .container-worker:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  .container-worker:nth-child(odd) .text-worker {
+    text-align: right;
+  }
+  .footer-elements {
+    flex-direction: row;
+  }
+}
